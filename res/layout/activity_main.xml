@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mis hobbies" />
+
+    <EditText
+        android:id="@+id/codigohobbie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Código del hobbie"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/listado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/insertar"
+        android:layout_below="@+id/insertar"
+        android:layout_marginTop="57dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/insertar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nomhobbie"
+        android:layout_below="@+id/nomhobbie"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="54dp"
+        android:text="insertar" />
+
+    <EditText
+        android:id="@+id/nomhobbie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/codigohobbie"
+        android:layout_below="@+id/codigohobbie"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Nombre del hobbie" />
+
+    <Button
+        android:id="@+id/btnConsulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listado"
+        android:layout_toRightOf="@+id/insertar"
+        android:text="Consulta" />
+
+    <Button
+        android:id="@+id/btnElliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnConsulta"
+        android:layout_toRightOf="@+id/btnConsulta"
+        android:text="Eliminar" />
+
+    <Button
+        android:id="@+id/btnactualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/insertar"
+        android:layout_below="@+id/insertar"
+        android:text="actualizar" />
+
+</RelativeLayout>
